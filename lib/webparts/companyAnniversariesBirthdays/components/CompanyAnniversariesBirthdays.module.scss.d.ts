@@ -1,0 +1,35 @@
+declare const styles: {
+    companyAnniversariesBirthdays: string;
+    teams: string;
+    centered: string;
+    header: string;
+    listView: string;
+    carouselView: string;
+    gridViewWithArrows: string;
+    gridViewCentered: string;
+    arrowButton: string;
+    title: string;
+    loading: string;
+    error: string;
+    noEvents: string;
+    gridView: string;
+    eventCard: string;
+    iconContainer: string;
+    icon: string;
+    bounce: string;
+    eventDetails: string;
+    employeeName: string;
+    eventType: string;
+    eventDate: string;
+    listItem: string;
+    listIcon: string;
+    listContent: string;
+    listName: string;
+    listType: string;
+    listDate: string;
+    carouselIndicators: string;
+    indicator: string;
+    active: string;
+};
+export default styles;
+//# sourceMappingURL=CompanyAnniversariesBirthdays.module.scss.d.ts.map
