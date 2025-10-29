@@ -12,6 +12,7 @@ export interface ICompanyAnniversariesBirthdaysWebPartProps {
     centerContent: boolean;
     birthdayColor: string;
     anniversaryColor: string;
+    certificationColor: string;
 }
 export default class CompanyAnniversariesBirthdaysWebPart extends BaseClientSideWebPart<ICompanyAnniversariesBirthdaysWebPartProps> {
     private _isDarkTheme;

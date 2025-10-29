@@ -115,7 +115,7 @@ export default class CompanyAnniversariesBirthdays extends React.Component<IComp
     } else if (event.type === 'certification') {
       icon = '🏆';
       title = `Certification: ${event.certificationName}`;
-      colors = '#28a745, #20c997'; // Green gradient for certifications
+      colors = this.props.certificationColor;
     }
 
     // Parse gradient colors

@@ -25,6 +25,7 @@ export interface ICompanyAnniversariesBirthdaysWebPartProps {
   centerContent: boolean;
   birthdayColor: string;
   anniversaryColor: string;
+  certificationColor: string;
 }
 
 export default class CompanyAnniversariesBirthdaysWebPart extends BaseClientSideWebPart<ICompanyAnniversariesBirthdaysWebPartProps> {
@@ -44,6 +45,7 @@ export default class CompanyAnniversariesBirthdaysWebPart extends BaseClientSide
         centerContent: this.properties.centerContent === true,
         birthdayColor: this.properties.birthdayColor || '#f093fb,#f5576c',
         anniversaryColor: this.properties.anniversaryColor || '#4facfe,#00f2fe',
+        certificationColor: this.properties.certificationColor || '#28a745,#20c997',
         isDarkTheme: this._isDarkTheme,
         spHttpClient: this.context.spHttpClient,
         siteUrl: this.context.pageContext.web.absoluteUrl,
@@ -178,6 +180,11 @@ export default class CompanyAnniversariesBirthdaysWebPart extends BaseClientSide
                   label: 'Anniversary Colors (gradient: color1,color2)',
                   description: 'Enter two colors separated by comma for gradient',
                   placeholder: '#4facfe,#00f2fe'
+                }),
+                PropertyPaneTextField('certificationColor', {
+                  label: 'Certification Colors (gradient: color1,color2)',
+                  description: 'Enter two colors separated by comma for gradient',
+                  placeholder: '#28a745,#20c997'
                 })
               ]
             }

@@ -9,6 +9,7 @@ export interface ICompanyAnniversariesBirthdaysProps {
     centerContent: boolean;
     birthdayColor: string;
     anniversaryColor: string;
+    certificationColor: string;
     isDarkTheme: boolean;
     spHttpClient: SPHttpClient;
     siteUrl: string;
